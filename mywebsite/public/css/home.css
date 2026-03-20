@@ -1,0 +1,3 @@
+﻿#matrix{position:fixed;top:0;left:0;z-index:-1;}
+.glitch{text-shadow:0 0 5px #00ff00;}
+#console{margin:20px;padding:15px;border:1px solid #00ff00;background:rgba(0,0,0,0.7);box-shadow:0 0 10px #00ff00;}

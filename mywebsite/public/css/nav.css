@@ -1,0 +1,5 @@
+﻿body{background:black;color:#00ff00;font-family:'Courier New',monospace;margin:0;}
+nav{background:#050505;padding:15px;border-bottom:1px solid #00ff00;}
+nav a{color:#00ff00;margin-right:20px;text-decoration:none;font-weight:bold;}
+nav a:hover{text-shadow:0 0 10px #00ff00;}
+h1,h2,h3{text-shadow:0 0 8px #00ff00;}

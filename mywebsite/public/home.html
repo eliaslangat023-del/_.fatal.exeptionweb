@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Hacker Dashboard</title>
+<link rel='stylesheet' href='css/nav.css'>
+<link rel='stylesheet' href='css/home.css'>
+</head>
+<body>
+<canvas id='matrix'></canvas>
+<nav>
+<a href='#'>Home</a>
+<a href='#'>Projects</a>
+<a href='#'>Education</a>
+<a href='#'>Gallery</a>
+<a href='/logout'>Logout</a>
+</nav>
+<h1 class='glitch'>Reew Martin | Hacker Portfolio</h1>
+<div id='console'></div>
+<script>
+const canvas = document.getElementById('matrix');
+const ctx = canvas.getContext('2d');
+canvas.height = window.innerHeight;
+canvas.width = window.innerWidth;
+let letters='01ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split(''), fontSize=14, columns=canvas.width/fontSize;
+let drops=[]; for(let x=0;x<columns;x++) drops[x]=1;
+function draw(){ ctx.fillStyle='rgba(0,0,0,0.05)'; ctx.fillRect(0,0,canvas.width,canvas.height);
+ctx.fillStyle='#00ff00'; ctx.font=fontSize+'px monospace';
+for(let i=0;i<drops.length;i++){ let text=letters[Math.floor(Math.random()*letters.length)];
+ctx.fillText(text,i*fontSize,drops[i]*fontSize);
+if(drops[i]*fontSize>canvas.height && Math.random()>0.975) drops[i]=0; drops[i]++; } }
+setInterval(draw,33);
+let logs=[\"> Initializing system...\",\"> Bypassing firewall...\",\"> Access granted.\",\"> Loading user profile...\",\"> Welcome, Reew Martin\"];
+let index=0; function showLogs(){ if(index<logs.length){ document.getElementById('console').innerHTML+=logs[index]+'<br>'; index++; setTimeout(showLogs,800);} }
+showLogs();
+</script>
+</body>
+</html>

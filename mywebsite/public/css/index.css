@@ -1,0 +1,4 @@
+﻿.login-box{width:300px;margin:150px auto;padding:20px;border:1px solid #00ff00;background:#050505;box-shadow:0 0 15px #00ff00;text-align:center;}
+input{width:90%;padding:10px;background:black;border:1px solid #00ff00;color:#00ff00;}
+button{padding:10px;background:black;color:#00ff00;border:1px solid #00ff00;cursor:pointer;}
+button:hover{box-shadow:0 0 10px #00ff00;}
